@@ -1,9 +1,23 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js,jsx}"],
+  mode: "jit",
+  content: ["./src/**/*.{html,js,jsx,tsx,vue}"],
   theme: {
     extend: {
+      spacing: {
+        '34': "34px",
+        '35': "35px",
+      },
+      colors: {
+        gray33: "#333",
+        orangefa: "#ffa400"
+      },
     },
+  },
+  variants: {
+    extend: {
+      backgroundColor: ['odd'],
+    }
   },
   plugins: [],
 }

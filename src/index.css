@@ -2,16 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@layer base {
+  h1 {
+    @apply text-[50px];
+  }
+
+  body {
+    font-family: "Rubik", san-serif;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* utilities là add những cái class chưa có trong tailwind */
+@layer utilities {
+  @variants responsive {
+    .scroll-snap-mandatory {
+      scroll-snap-type: x mandatory;
+    }
+
+    .scroll-snap-always {
+      scroll-snap-stop: always;
+    }
+
+    .scroll-snap-start {
+      scroll-snap-align: start;
+    }
+  }
 }
+
+/* .grid-layout {
+  @apply grid auto-cols-[90%] grid-flow-col overflow-x-auto lg: scroll-snap-mandatory scroll-snap-always gap-x-5 lg:text-right;
+} */
