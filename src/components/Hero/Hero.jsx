@@ -1,6 +1,6 @@
 import React from "react";
 import { FiArrowRightCircle } from "react-icons/fi";
-import grocery from '../../images/grocery-image.png'
+import grocery from '../../images/grocery-image.png';
 
 const Hero = () => {
     return (

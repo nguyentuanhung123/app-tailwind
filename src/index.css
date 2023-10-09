@@ -2,9 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
   h1 {
     @apply text-[50px];
+  }
+
+  .title {
+    @apply p-4 m-4 text-lg text-red-500 lg:text-[#625af9] lg:hover:text-[#5af9bf];
   }
 
   body {

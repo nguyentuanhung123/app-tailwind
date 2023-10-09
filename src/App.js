@@ -1,6 +1,7 @@
 import './App.css';
 import Example from './components/Example/Example';
 import Example2 from './components/Example/Example2';
+import Finally from './components/Finally/Finally';
 import Footer from './components/Footer/Footer';
 import Hero from './components/Hero/Hero';
 import Nav from './components/Nav/Nav';
@@ -14,9 +15,10 @@ function App() {
         <Hero />
       </div>
       <Travel />
-      {/* <Example /> */}
+      <Example />
       <Example2 />
       <Footer />
+      <Finally />
     </>
   );
 }
